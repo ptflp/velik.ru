@@ -1,0 +1,425 @@
+/*
+* Version: 1.9.2
+* Orange Color 		  : #ff662b;
+* Orange Hover Color  : #d35400;
+* Additional color    : #eaa76b;
+* rgba(230, 126, 34, 1);
+*/
+
+a {
+    color: #ff662b;
+}
+
+a:hover {
+    color: #ff662b;
+}
+
+/*Headers Default
+------------------------------------*/
+
+.header-v5 .navbar-default .navbar-nav > li > a:hover,
+.header-v5 .navbar-default .navbar-nav > .active > a {
+    border-top-color: #ff662b;
+}
+
+.header-v5 .navbar-default .navbar-nav > .active > a {
+    color: #ff662b;
+}
+
+.header-v5 .navbar-default .navbar-nav > li:hover > a {
+    color: #ff662b;
+}
+.header-v5 .navbar-default .navbar-nav > .open > a,
+.header-v5 .navbar-default .navbar-nav > .open > a:hover,
+.header-v5 .navbar-default .navbar-nav > .open > a:focus {
+    color: #ff662b;
+}
+
+.header-v5 .dropdown-menu li > a:hover {
+    background:  #ff662b;
+}
+
+.header-v5 .dropdown-menu .active > a,
+.header-v5 .dropdown-menu li > a:hover {
+    background:  #ff662b;
+}
+
+.header-v5 .dropdown-menu li a:focus {
+    background:  #fff;
+}
+
+.header-v5 .dropdown-menu {
+    border-color: #ff662b;
+}
+
+.header-v5 .dropdown-menu li.dropdown-submenu:hover > a {
+    background:  #ff662b;
+}
+
+.header-v5 .dropdown-menu .style-list li > a:hover {
+    background: none;
+}
+
+.header-v5 .style-list li a:hover {
+    color: #ff662b;
+}
+/* Shopping cart*/
+/*.header-v5 .shop-badge.badge-icons i {
+    color: #ff662b;
+}*/
+
+.header-v5 .shop-badge span.badge-sea {
+    background:  #ff662b;
+}
+
+.header-v5 .badge-open {
+    border-top: 2px solid #ff662b;
+    box-shadow: 0 5px 5px 0 rgba(90, 90, 90, 0.075);
+}
+
+.header-v5 li.subtotal .subtotal-cost {
+    color: #ff662b;
+}
+
+.btn-u.btn-brd.btn-u-sea-shop {
+    border-color: #ff662b;
+    color: #ff662b;
+}
+
+.btn-u.btn-brd.btn-u-sea-shop:hover {
+    border-color: #ff662b;
+    color: #ff662b;
+}
+
+.btn-u.btn-brd.btn-u-sea-shop.btn-brd-hover:hover {
+    background:  #ff662b;
+}
+
+.btn-u.btn-u-sea-shop {
+	background-color: #ff662b;
+}
+.btn-u.btn-u-sea-shop:hover {
+    border-color: #ff662b;
+    background: #d35400	;
+
+}
+
+/*Responsive Navbar*/
+@media (max-width: 991px) {
+    /*Responsive code for max-width: 991px*/
+
+    .header-v5 .navbar-default .navbar-nav > .active > a,
+    .header-v5 .navbar-default .navbar-nav > .active > a:hover,
+    .header-v5 .navbar-default .navbar-nav > .active > a:focus {
+        background: #ff662b !important;
+    }
+
+    .header-v5 .dropdown-menu li.dropdown-submenu:hover > a {
+        background:  none;
+    }
+
+}
+
+.header-v5 .subtotal .subtotal-cost {
+    color: #ff662b;
+}
+/* Tab v6
+------------------------------------*/
+.tab-v6 .nav-tabs > li.active > a,
+.tab-v6 .nav-tabs > li.active > a:hover,
+.tab-v6 .nav-tabs > li.active > a:focus {
+    border-color: #ff662b;
+}
+
+.tab-v6 .nav-tabs > li > a:hover {
+    border-bottom: 1px solid #ff662b;
+}
+/* Product Rating
+------------------------------------*/
+.product-ratings li.reply a {
+    color: #ff662b;
+}
+
+/* Illustration v2
+------------------------------------*/
+.illustration-v2 .add-to-cart:hover {
+    background-color: rgba(255, 73, 3, 0.62);
+}
+
+.product-description h4.title-price a:hover {
+    color: #ff662b;
+}
+
+.product-ratings li .rating-selected {
+    color: #ff662b;
+}
+
+.product-ratings li .rating {
+    color: #a7a7a7;
+}
+
+.product-ratings li.like-icon a {
+    color: #eaa76b;
+}
+
+.product-ratings li.like-icon a:hover {
+    color: #ff662b;
+}
+
+/* Illustration v4
+------------------------------------*/
+.illustration-v4 .thumb-product-purchase a {
+    color: #eaa76b;
+}
+
+.illustration-v4 .thumb-product-purchase a:hover {
+    color: #ff662b;
+}
+
+.illustration-v4 .thumb-product-in h4 a:hover {
+    color: #ff662b;
+}
+
+/* Twitter Block
+------------------------------------*/
+.twitter-block .item a {
+    color: #ff662b;
+}
+
+/* Shop bg
+------------------------------------*/
+.shop-bg-green {
+    background:  #ff662b;
+}
+
+/* Shop Subscribe
+------------------------------------*/
+.shop-subscribe {
+    background:  #ff662b;
+}
+
+.footer-v4 .copyright a {
+    color: #ff662b;
+}
+
+/* Shop text
+------------------------------------*/
+.shop-green {
+    color: #ff662b;
+}
+
+/* Breadcrumbs v4
+------------------------------------*/
+.breadcrumbs-v4 .breadcrumb-v4-in li.active,
+ .breadcrumbs-v4 .breadcrumb-v4-in li a:hover {
+    color: #ff662b;
+}
+
+/* Wizard
+------------------------------------*/
+.wizard > .steps .current a,
+.wizard > .steps .current a:hover,
+.wizard > .steps .current a:active {
+    background:  #d35400;
+}
+
+.wizard > .steps .disabled .number {
+    color: #ff662b;
+}
+
+.wizard > .actions .disabled a,
+.wizard > .actions .disabled a:hover,
+.wizard > .actions .disabled a:active {
+    background:  #eaa76b;
+}
+
+.wizard > .actions a {
+    background:  #ff662b;
+}
+
+.wizard > .actions a:hover {
+    background:  #eaa76b;
+}
+
+.wizard > .steps .done a,
+.wizard > .steps .done a:hover,
+.wizard > .steps .done a:active {
+    background:  #ff662b;
+}
+
+/* Filter By Block
+------------------------------------*/
+.filter-by-block h1 {
+    background:  #ff662b;
+}
+
+/* Checkbox List
+------------------------------------*/
+.checkbox-list .checkbox input + i:after,
+.checkbox-list .checkbox small a {
+    color: #ff662b;
+}
+
+.checkbox-list .checkbox i,
+.checkbox-list .checkbox:hover i,
+.checkbox-list .checkbox input:focus + i,
+.checkbox-list .checkbox input:checked + i {
+    border-color: #ff662b;
+}
+
+/* noUi Connect
+------------------------------------*/
+.noUi-connect {
+    background:  #ff662b;
+}
+
+/* Stars Rating Label
+------------------------------------*/
+.stars-ratings label {
+    color: #a7a7a7;
+}
+
+.stars-ratings input + label:hover,
+.stars-ratings input:checked ~ label,
+.stars-ratings input + label:hover ~ label {
+    color: #ff662b;
+}
+
+/* Grid List Icon v2
+------------------------------------*/
+.grid-list-icons i {
+    background:  #ff662b;
+}
+
+/* Pagination v2
+------------------------------------*/
+.pagination.pagination-v2 > li > a:hover,
+.pagination.pagination-v2 > .active > a,
+.pagination.pagination-v2 > .active > span,
+.pagination.pagination-v2 > .active > a:hover,
+.pagination.pagination-v2 > .active > span:hover,
+.pagination.pagination-v2 > .active > a:focus,
+.pagination.pagination-v2 > .active > span:focus {
+    background:  #ff662b;
+    border-color: #ff662b;
+}
+
+/* Add To Wish List
+------------------------------------*/
+.add-to-wishlist i {
+    color: #eaa76b;
+}
+
+.add-to-wishlist a:hover,
+.add-to-wishlist .wishlist-in:hover i,
+.add-to-wishlist .compare-in:hover i {
+    color: #ff662b;
+}
+
+.add-to-wishlist a:hover,
+.add-to-wishlist .wishlist-in:hover i,
+.add-to-wishlist .compare-in:hover i {
+    color: #ff662b;
+}
+
+/* Breadcrumb v5
+------------------------------------*/
+.breadcrumb-v5 li.active,
+.breadcrumb-v5 li a:hover {
+    color: #ff662b;
+}
+
+/* Shop Product Social
+------------------------------------*/
+.shop-product .shop-product-social li i:hover {
+    color: #ff662b;
+}
+/* Shop Product
+------------------------------------*/
+.shop-product .product-review-list a:hover {
+    color: #ff662b;
+}
+
+.shop-product .product-size input:checked ~ label {
+    border-color: #ff662b;
+    color: #ff662b;
+}
+
+.shop-product .product-size label:hover {
+    border-color: #ff662b;
+    color: #ff662b;
+}
+
+.shop-product .product-color input:checked ~ label {
+    border: 2px solid #ff662b;
+}
+
+.shop-product .product-color label:hover {
+    border: 2px solid #ff662b;
+}
+
+/* Shop Service
+------------------------------------*/
+.product-service .product-service-heading {
+    background:  #ff662b;
+}
+
+.product-service:hover .product-service-heading {
+    background:  #eaa76b;
+}
+
+/* Info Block v2
+------------------------------------*/
+.info-block-v2 i {
+    color: #ff662b;
+}
+
+/* Log Reg v3
+------------------------------------*/
+.log-reg-v3 .checkbox input + i:after {
+    color: #ff662b;
+}
+
+.log-reg-v3 .checkbox input:checked + i {
+    border-color: #ff662b;
+}
+.log-reg-v3 .checkbox i {
+    border-color: #eaa76b;
+}
+
+.log-reg-v3 .checkbox:hover i {
+    border-color: #ff662b;
+}
+
+/* Cus Form Horizantal
+------------------------------------*/
+.cus-form-horizontal .input-small-field a {
+    color: #ff662b;
+}
+.cus-form-horizontal .input-small-field a:hover {
+    color: #ff662b;
+    text-decoration: none;
+}
+
+/* Accordion v2
+------------------------------------*/
+.accordion-v2.plus-toggle .panel-heading a:before {
+    background:  #ff662b;
+}
+
+#topcontrol:hover {
+    background-color: #ff662b;
+}
+
+/* Grid List Icons
+------------------------------------*/
+.grid-list-icons i:hover {
+    background: #eaa76b;
+    text-decoration: none;
+}
+
+/* Grid List Icons
+------------------------------------*/
+.wishlist-category a {
+    color: #ff662b;
+}

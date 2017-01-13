@@ -1,0 +1,35 @@
+{
+  "1": {
+    "brand": "Merida",
+    "model": "Первый",
+    "price": 19000,
+    "size": "20",
+    "img": {
+      "thumb": "assets/img/blog/28-thumb.jpg",
+      "medium": "assets/img/blog/28.jpg",
+      "big": "assets/img/blog/28-full.jpg"
+    }
+  },
+  "2": {
+    "brand": "Merida",
+    "model": "Второй",
+    "price": 19000,
+    "size": "20",
+    "img": {
+      "thumb": "assets/img/blog/29-thumb.jpg",
+      "medium": "assets/img/blog/29.jpg",
+      "big": "assets/img/blog/29-full.jpg"
+    }
+  },
+  "3": {
+    "brand": "Merida",
+    "model": "Третий",
+    "price": 19000,
+    "size": "20",
+    "img": {
+      "thumb": "assets/img/blog/30-thumb.jpg",
+      "medium": "assets/img/blog/30.jpg",
+      "big": "assets/img/blog/30-full.jpg"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/* Add here all your css styles (customizations) */
+.shop-rgba-orange.rgba-banner img {
+    width: 10px;
+    margin-bottom: 3px;
+}
+label.textarea {
+    min-width: 100%;
+}
+	label.textarea textarea#message {
+	    min-width: 100%;
+	}
