@@ -17,7 +17,7 @@
 	var products=[]; // products array
 	var id,qty,size,color,item; // products parametrs
 	var img,span,div,li,btn,small,docfrag; // cart elements for render
-	var tr,td,td1,td2,td3,td4,td5,h3,btn1,btn2,input;
+	var tr,td,td1,td2,td3,td4,td5,h3,btn1,btn2,input; // checkout vars
 	var myExp,search; // renderInfo vars
 	function overDel () {
 			setTimeout(function(){
@@ -61,7 +61,6 @@
 				color=1;
 			}
 			item={"id":id,"size":parseInt(size),"qty":parseInt(qty),"color":color};
-			console.log(item);
 		},
 		getLsProducts: function() { // Достаем из localStorage products, помещаем в массив products
 			var LSproducts=localStorage.getItem("products");
@@ -118,6 +117,7 @@
 		btnCloseCheckOut: function() { // удаление одного товара из корзины нажатием на крестик
 			$(".closeCheckOut").click(function(){ // кнопка удаления товара х
 				var id=$(this).data("id");
+				$(this).attr('disabled');
 				console.log(id);
 				products.splice(id, 1);
 				shop.storeLsProducts();
@@ -164,9 +164,7 @@
 		cartProductRender: function  (){
 			summa=0;
 			var cartList=document.getElementById('mCSB_1_container');
-			console.log(cartList);
 			var checklist=document.getElementById('CheckOut');
-			console.log(checklist);
 			docfrag = document.createDocumentFragment();
 			/* Render service info in modal*/
 			function RenderInfo (val,key,cartItem){ // Функция создания элементов
@@ -210,7 +208,6 @@
 			cartList.appendChild(docfrag);
 			shop.btnClose();
 			shop.cartCount();
-			console.log(cartList.length);
 			if (checklist === null) {
 				
 			} else {
@@ -242,6 +239,7 @@
 					td2.textContent=val.price;
 
 				td3 = td.cloneNode(true);
+					td3.className="state-success";
 					btn1=document.createElement("button");
 					btn1.setAttribute("type","button");
 					btn1.className="quantity-button";
@@ -249,6 +247,7 @@
 					btn1.setAttribute("name","subtract");
 					btn1.textContent="-";
 					btn1.setAttribute("data-id",key);// номер элемента в корзине, ссылка для удаления из корзины
+					btn1.setAttribute("data-cost",val.price);
 
 					input = document.createElement("input");
 					input.setAttribute("type","text");
@@ -257,9 +256,10 @@
 					input.setAttribute("value",cartItem.qty);
 					input.setAttribute("readonly",true);
 
-					btn2.setAttribute("name","qty");
+					btn2.setAttribute("name","add");
 					btn2.textContent="+";
 					btn2.setAttribute("data-id",key);// номер элемента в корзине, ссылка для удаления из корзины
+					btn2.setAttribute("data-cost",val.price);
 
 				td4 = td.cloneNode(true);
 					td4.className="shop-red";
@@ -292,7 +292,6 @@
 				tr.appendChild(td4);
 				tr.appendChild(td5);
 				docfrag.appendChild(tr);
-				console.log(tr);
 			}
 
 			if (products.length === 0) {
@@ -307,7 +306,31 @@
 			}
 			checklist.appendChild(docfrag);
 			shop.btnCloseCheckOut();
+			shop.btnQnty();
 		},
+		btnQnty:  function(){
+			$('[name="add"].quantity-button').click(function(){
+				$(this).closest('.state-success').find('input').val(function(i, oldval) {
+    				return ++oldval;
+				})
+				var id=$(this).data('id');
+				console.log(id);
+			});
+			$('[name="subtract"].quantity-button').click(function(){
+				$(this).closest('.state-success').find('input').val(function(i, oldval) {
+						var temp;
+						if (temp - 1 < 1) {
+							temp = 1;
+							return temp;
+						} else {
+							temp =--oldval;
+							return temp;
+						}
+				})
+			});
+	    },
+	    inputQty: function(){
+	    },
 	    JSONData: function(){
 	     	var Now = new Date();
 	     	var file = ('data.json?' + Now.getTime());
