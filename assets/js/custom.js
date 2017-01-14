@@ -160,6 +160,7 @@
 			var temp=parseInt(qty)*parseInt(price);
 			summa+=temp;
 			$('.subtotal-cost').html(summa);
+			$('.total-result-in span').html(summa);
 		},
 		cartProductRender: function  (){
 			summa=0;
