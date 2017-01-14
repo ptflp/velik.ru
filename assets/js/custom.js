@@ -16,7 +16,8 @@
 		cartList,cartCounter,summa;
 	var products=[]; // products array
 	var id,qty,size,color,item; // products parametrs
-	var img,span,div,li,btn,small,docfrag; // elements for render
+	var img,span,div,li,btn,small,docfrag; // cart elements for render
+	var tr,td,td2,td3,td4,td5,h3,btn1,btn2,input;
 	var myExp,search; // renderInfo vars
 	function overDel () {
 			setTimeout(function(){
@@ -62,7 +63,6 @@
 			item={"id":id,"size":parseInt(size),"qty":parseInt(qty),"color":color};
 			console.log(item);
 		},
-
 		getLsProducts: function() { // Достаем из localStorage products, помещаем в массив products
 			var LSproducts=localStorage.getItem("products");
 			products=JSON.parse(LSproducts);
@@ -149,6 +149,9 @@
 		cartProductRender: function  (){
 			summa=0;
 			var cartList=document.getElementById('mCSB_1_container');
+			console.log(cartList);
+			var checklist=document.getElementById('CheckOut');
+			console.log(checklist);
 			docfrag = document.createDocumentFragment();
 			/* Render service info in modal*/
 			function RenderInfo (val,key,cartItem){ // Функция создания элементов
@@ -192,6 +195,101 @@
 			cartList.appendChild(docfrag);
 			shop.btnClose();
 			shop.cartCount();
+			console.log(cartList.length);
+			if (checklist === null) {
+				
+			} else {
+				shop.checkOutRender(checklist);
+			}
+		},
+		checkOutRender: function  (checklist){
+			$('.quantity-button').closest('.state-success').find('input');
+			docfrag = document.createDocumentFragment();
+			/* Render service info in modal*/
+			function RenderInfo (val,key,cartItem){ // Функция создания элементов
+				tr = document.createElement("tr");
+
+				td = document.createElement("td");
+					td.className="product-in-table";
+					img = document.createElement("img");
+					img.className = "img-responsive"; // хрен его знает, наверно нужно
+					img.setAttribute('src', val.img.thumb); // иконка товара
+					img.setAttribute ('alt', val.model); // модель товара
+					div = document.createElement("div")
+					div.className="product-it-in";
+					h3 = document.createElement("h3");
+					h3.textContent=val.brand;
+					span = document.createElement("span");
+					span.textContent=val.model;
+
+				td2 = td.cloneNode(true);
+					td2.textContent=val.price;
+
+				td3 = td.cloneNode(true);
+					btn1=document.createElement("button");
+					btn1.setAttribute("type","button");
+					btn1.className="quantity-button";
+					btn2 = btn1.cloneNode(true);
+					btn1.setAttribute("name","subtract");
+					btn1.textContent="-";
+					btn1.setAttribute("data-id",key);// номер элемента в корзине, ссылка для удаления из корзины
+
+					input = document.createElement("input");
+					input.setAttribute("type","text");
+					input.className="quantity-field valid";
+					input.setAttribute("type","text");
+					input.setAttribute("value",cartItem.qty);
+					input.setAttribute("readonly",true);
+
+					btn2.setAttribute("name","qty");
+					btn2.textContent="+";
+					btn2.setAttribute("data-id",key);// номер элемента в корзине, ссылка для удаления из корзины
+
+				td4 = td.cloneNode(true);
+					td4.className="shop-red";
+
+				td5 = td.cloneNode(true);
+					btn=document.createElement("button");
+					btn.setAttribute("type","button");
+					btn.className="close";
+					btn.textContent="×";
+
+				td.appendChild(img);
+				div.appendChild(h3);
+				div.appendChild(span);
+				td.appendChild(div);
+
+				td2.textContent=val.price;
+
+				td3.appendChild(btn1);
+				td3.appendChild(input);
+				td3.appendChild(btn2);
+
+				td4.textContent=cartItem.qty * val.price;
+
+				td5.appendChild(btn);
+
+				tr.appendChild(td);
+				tr.appendChild(td2);
+				tr.appendChild(td3);
+				tr.appendChild(td4);
+				tr.appendChild(td5);
+				docfrag.appendChild(tr);
+				console.log(tr);
+			}
+
+			if (products.length === 0) {
+				summa=0;
+			} else {
+				$.each(products, function(vkey, cartItem) {
+					RenderInfo (JSONData[cartItem['id']],vkey,cartItem);
+				});
+			}
+			while (checklist.firstChild) {
+			    checklist.removeChild(checklist.firstChild);
+			}
+			checklist.appendChild(docfrag);
+			shop.btnClose();
 		},
 	    JSONData: function(){
 	     	var Now = new Date();
