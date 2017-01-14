@@ -100,7 +100,6 @@
 <script src="assets/js/plugins/owl-carousel.js"></script>
 <script src="assets/js/plugins/revolution-slider.js"></script>
 <script src="assets/js/plugins/master-slider.js"></script>
-<script src="assets/js/forms/product-quantity.js"></script>
 <script src="assets/js/plugins/mouse-wheel.js"></script>
 <script src="assets/js/forms/page_login.js"></script>
 <script src="assets/js/plugins/stepWizard.js"></script>
