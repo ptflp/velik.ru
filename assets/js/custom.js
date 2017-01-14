@@ -310,23 +310,37 @@
 		},
 		btnQnty:  function(){
 			$('[name="add"].quantity-button').click(function(){
+				var cqty;
 				$(this).closest('.state-success').find('input').val(function(i, oldval) {
-    				return ++oldval;
+					cqty=++oldval;
+    				return cqty;
 				})
 				var id=$(this).data('id');
-				console.log(id);
+				var cost=parseInt($(this).data('cost'));
+				products[id]['qty']=cqty;
+				console.log(products[id]);
+				$(this).closest('tr').find('.shop-red').html(cost*cqty);
+				shop.storeLsProducts(); //  записываем в localStorage
+				shop.cartProductRender();//Рисуем список товаров в корзине		
 			});
 			$('[name="subtract"].quantity-button').click(function(){
+				var cqty;
 				$(this).closest('.state-success').find('input').val(function(i, oldval) {
-						var temp;
-						if (temp - 1 < 1) {
-							temp = 1;
-							return temp;
-						} else {
-							temp =--oldval;
-							return temp;
-						}
-				})
+					cqty=oldval;			
+					if (cqty - 1 < 1) {
+						cqty = 1;
+					} else {
+						cqty =--oldval;
+					}
+					return cqty;
+				});
+				var id=$(this).data('id');
+				var cost=parseInt($(this).data('cost'));
+				products[id]['qty']=cqty;
+				console.log(products[id]);
+				$(this).closest('tr').find('.shop-red').html(cost*cqty);
+				shop.storeLsProducts(); //  записываем в localStorage
+				shop.cartProductRender();//Рисуем список товаров в корзине
 			});
 	    },
 	    inputQty: function(){
