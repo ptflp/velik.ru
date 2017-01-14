@@ -17,7 +17,7 @@
 	var products=[]; // products array
 	var id,qty,size,color,item; // products parametrs
 	var img,span,div,li,btn,small,docfrag; // cart elements for render
-	var tr,td,td2,td3,td4,td5,h3,btn1,btn2,input;
+	var tr,td,td1,td2,td3,td4,td5,h3,btn1,btn2,input;
 	var myExp,search; // renderInfo vars
 	function overDel () {
 			setTimeout(function(){
@@ -100,14 +100,29 @@
 			);
 		},
 		btnClose: function() { // удаление одного товара из корзины нажатием на крестик
-			$(".close").click(function(){ // кнопка удаления товара х
+			$(".closeCart").click(function(){ // кнопка удаления товара х
 				var id=$(this).data("id");
 				console.log(id);
 				products.splice(id, 1);
 				shop.storeLsProducts();
 				shop.cartCount(); // Отображение количества товаров в корзине
-				$(this).closest('tr').slideUp(500);
 				$(this).closest("li").slideUp(500, function() { 
+					shop.cartProductRender();
+					jQuery('.subtotal-cost').counterUp({
+		                delay: 10,
+		                time: 600
+		            });
+				});
+			});
+		},
+		btnCloseCheckOut: function() { // удаление одного товара из корзины нажатием на крестик
+			$(".closeCheckOut").click(function(){ // кнопка удаления товара х
+				var id=$(this).data("id");
+				console.log(id);
+				products.splice(id, 1);
+				shop.storeLsProducts();
+				shop.cartCount(); // Отображение количества товаров в корзине
+				$(this).closest("tr").slideUp(500, function() { 
 					shop.cartProductRender();
 					jQuery('.subtotal-cost').counterUp({
 		                delay: 10,
@@ -162,7 +177,7 @@
 				img.setAttribute ('alt', val.model); // модель товара
 				btn=document.createElement("button");
 				btn.setAttribute("type","button");
-				btn.className="close";
+				btn.className="close closeCart";
 				btn.textContent="×";
 				btn.setAttribute("data-id",key); // номер элемента в корзине, ссылка для удаления из корзины
 				div = document.createElement("div")
@@ -210,7 +225,8 @@
 				tr = document.createElement("tr");
 
 				td = document.createElement("td");
-					td.className="product-in-table";
+				td1 = td.cloneNode(true);
+					td1.className="product-in-table";
 					img = document.createElement("img");
 					img.className = "img-responsive"; // хрен его знает, наверно нужно
 					img.setAttribute('src', val.img.thumb); // иконка товара
@@ -251,13 +267,14 @@
 				td5 = td.cloneNode(true);
 					btn=document.createElement("button");
 					btn.setAttribute("type","button");
-					btn.className="close";
+					btn.setAttribute("data-id",key);
+					btn.className="close closeCheckOut";
 					btn.textContent="×";
 
-				td.appendChild(img);
+				td1.appendChild(img);
 				div.appendChild(h3);
 				div.appendChild(span);
-				td.appendChild(div);
+				td1.appendChild(div);
 
 				td2.textContent=val.price;
 
@@ -269,7 +286,7 @@
 
 				td5.appendChild(btn);
 
-				tr.appendChild(td);
+				tr.appendChild(td1);
 				tr.appendChild(td2);
 				tr.appendChild(td3);
 				tr.appendChild(td4);
@@ -289,7 +306,7 @@
 			    checklist.removeChild(checklist.firstChild);
 			}
 			checklist.appendChild(docfrag);
-			shop.btnClose();
+			shop.btnCloseCheckOut();
 		},
 	    JSONData: function(){
 	     	var Now = new Date();
