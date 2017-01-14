@@ -70,15 +70,14 @@
 </head>
 
 <body class="header-fixed">
+	<div class="wrapper">
 	<div id="loading">
 		<div class="overlaybg">
-			<div id="particles-js"></div>
 		</div>
 		<div class="loaderfx">
 			<img class="img-responsive" width="120" src="assets/img/loader.gif">
 		</div>
 	</div>
-	<div class="wrapper">
 		<!--=== Header v5 ===-->
 		<div class="header-v5 header-static">
 			<!-- Topbar v3 -->
@@ -132,7 +131,7 @@
 					<!-- Shopping Cart -->
 					<div class="shop-badge badge-icons animateCart pull-right">
 						<a href="checkout.php"><i class="fa fa-shopping-cart pull-right"></i></a>
-						<span class="badge badge-sea rounded-x" data-counterup-nums="0">2</span>
+						<span class="badge badge-sea rounded-x" data-counterup-nums="0">0</span>
 						<div class="badge-open">
 							<div class="subtotal">
 								<div class="overflow-h margin-bottom-10">
