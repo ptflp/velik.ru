@@ -279,20 +279,14 @@ include 'header.php'; //хидер
 										<li>
 											<h4>Сумма:</h4>
 											<div class="total-result-in">
-												<span>$ 1280.00</span>
-											</div>
-										</li>
-										<li>
-											<h4>Доставка:</h4>
-											<div class="total-result-in">
-												<span class="text-right">- - - -</span>
+												<span>0.00</span>
 											</div>
 										</li>
 										<li class="divider"></li>
 										<li class="total-price">
 											<h4>Итого:</h4>
 											<div class="total-result-in">
-												<span>$ 1280.00</span>
+												<span>0.00</span>
 											</div>
 										</li>
 									</ul>
