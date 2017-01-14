@@ -35,7 +35,7 @@ include 'header.php'; //хидер
 											<th>Наименование</th>
 											<th>Цена</th>
 											<th>Кол-во</th>
-											<th>Стоимость</th>
+											<th>Сумма</th>
 										</tr>
 									</thead>
 									<tbody id="CheckOut">
@@ -290,7 +290,7 @@ include 'header.php'; //хидер
 										</li>
 										<li class="divider"></li>
 										<li class="total-price">
-											<h4>К оплате:</h4>
+											<h4>Итого:</h4>
 											<div class="total-result-in">
 												<span>$ 1280.00</span>
 											</div>
