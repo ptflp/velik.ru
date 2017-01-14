@@ -119,7 +119,7 @@
 		clearCart: function (search) { //очистка корзины
 			$('#clearCart').click(
 				function(){
-					event.preventDefault(); // для предотовращения перехода по ссылке, точнее стандартных действий с любым элементом
+					event.preventDefault(); // для предотовращения перехода по ссылке, точнее стандартных действий с текущим элементом
 					products=[];
 					shop.storeLsProducts();
 					shop.cartProductRender();
@@ -195,10 +195,10 @@
 		},
 	    JSONData: function(){
 	     	var Now = new Date();
-			Now = Now.getTime();
-	     	var file = ('data.json?' + Now);
+	     	var file = ('data.json?' + Now.getTime());
+	     	$.ajaxSetup({ cache: false });
 	     	$.getJSON(file, function(data) {
-	     		JSONData=data;
+	     		JSONData=data;  // Записываем полученные данные в переменную JSONData
 				shop.getLsProducts();  // Берем все товары из корзины
 				shop.cartProductRender();//Рисуем список товаров в корзине
 		    });
