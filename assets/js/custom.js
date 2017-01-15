@@ -20,21 +20,6 @@
 	var lschange;
 	var tr,td,td1,td2,td3,td4,td5,h3,btn1,btn2,input; // checkout vars
 	var myExp,search; // renderInfo vars
-	toastr.options = {
-	  "closeButton": false,
-	  "debug": false,
-	  "newestOnTop": true,
-	  "progressBar": true,
-	  "onclick": null,
-	  "showDuration": "300",
-	  "hideDuration": "1000",
-	  "timeOut": "5000",
-	  "extendedTimeOut": "1000",
-	  "showEasing": "swing",
-	  "hideEasing": "linear",
-	  "showMethod": "fadeIn",
-	  "hideMethod": "fadeOut"
-	}
 	function overDel () {
 		setTimeout(function(){
 			$('#loading').addClass('animated fadeOut');
@@ -384,4 +369,19 @@ function subtractQty(){
         return;
     else
         document.getElementById("qty").value--;
+}
+toastr.options = {
+  "closeButton": false,
+  "debug": false,
+  "newestOnTop": true,
+  "progressBar": true,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "5000",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
 }

@@ -37,6 +37,7 @@ var StepWizard = function () {
                         }
                         form.validate().settings.ignore = ":disabled,:hidden";
                         if ($('#mCSB_1_container li').length < 1) {
+                                toastr["error"]("В корзине нет товаров");
                                 return false;
                             } else {
                                 return form.valid();
