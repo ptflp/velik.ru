@@ -103,6 +103,7 @@
 <script src="assets/js/plugins/mouse-wheel.js"></script>
 <script src="assets/js/forms/page_login.js"></script>
 <script src="assets/js/plugins/stepWizard.js"></script>
+<script src="assets/js/plugins/toastr.min.js"></script>
 <script type="text/javascript" src="assets/js/plugins/fancy-box.js"></script>
 <!--[if lt IE 9]>
 	<script src="assets/plugins/respond.js"></script>

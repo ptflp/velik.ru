@@ -61,6 +61,7 @@
 
 	<link rel="stylesheet" href="assets/plugins/noUiSlider/jquery.nouislider.min.css">
 	<link rel="stylesheet" href="assets/plugins/scrollbar/css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="assets/css/plugins/toastr.min.css">
 
 	<!-- CSS Theme -->
 	<link rel="stylesheet" href="assets/css/theme-colors/orange.css" id="style_color">
