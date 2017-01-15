@@ -169,7 +169,7 @@
 
 							<!-- Gifts -->
 							<li class="dropdown mega-menu-fullwidth">
-								<a href="catalog.php" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+								<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
 									Каталог
 								</a>
 								<ul class="dropdown-menu">
@@ -180,16 +180,16 @@
 													<div class="col-md-3 col-sm-12 col-xs-12 md-margin-bottom-30">
 														<h3 class="mega-menu-heading">Pellentes que nec diam lectus</h3>
 														<p>Proin pulvinar libero quis auctor pharet ra. Aenean fermentum met us orci, sedf eugiat augue pulvina r vitae. Nulla dolor nisl, molestie nec aliquam vitae, gravida sodals dolor...</p>
-														<button type="button" class="btn-u btn-u-dark">Read More</button>
+														<a href="catalog.php"><button type="button" class="btn-u btn-u-dark">Перейти в каталог</button></a>
 													</div>
 													<div class="col-md-3 col-sm-4 col-xs-4 md-margin-bottom-30">
-														<a href="#"><img class="product-offers img-responsive" src="assets/img/blog/01.jpg" alt=""></a>
+														<a href="#"><img class="product-offers img-responsive" src="assets/img/blog/28.jpg" alt=""></a>
 													</div>
 													<div class="col-md-3 col-sm-4 col-xs-4 sm-margin-bottom-30">
-														<a href="#"><img class="product-offers img-responsive" src="assets/img/blog/02.jpg" alt=""></a>
+														<a href="#"><img class="product-offers img-responsive" src="assets/img/blog/29.jpg" alt=""></a>
 													</div>
 													<div class="col-md-3 col-sm-4 col-xs-4">
-														<a href="#"><img class="product-offers img-responsive" src="assets/img/blog/03.jpg" alt=""></a>
+														<a href="#"><img class="product-offers img-responsive" src="assets/img/blog/30.jpg" alt=""></a>
 													</div>
 												</div><!--/end row-->
 											</div><!--/end container-->
