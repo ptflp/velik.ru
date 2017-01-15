@@ -229,21 +229,18 @@
 						<div class="col-sm-8">
 							<ul class="list-inline clear-both">
 								<li class="grid-list-icons">
-									<a href="shop-ui-filter-list.html"><i class="fa fa-th-list"></i></a>
-									<a href="shop-ui-filter-grid.html"><i class="fa fa-th"></i></a>
+									<a href="catalog.php"><i class="fa fa-th-list"></i></a>
+									<a href="catalog-grid.php"><i class="fa fa-th"></i></a>
 								</li>
 								<li class="sort-list-btn">
 									<h3>Показать :</h3>
 									<div class="btn-group">
-										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-											20 <span class="caret"></span>
-										</button>
-										<ul class="dropdown-menu" role="menu">
-											<li><a href="#">Все</a></li>
-											<li><a href="#">50</a></li>
-											<li><a href="#">20</a></li>
-											<li><a href="#">10</a></li>
-										</ul>
+										<select name="typeD" class="valid">
+											<option value="0">10</option>
+											<option value="1">20</option>
+											<option value="2">50</option>
+											<option value="3">100</option>
+										</select>
 									</div>
 								</li>
 							</ul>
@@ -254,12 +251,12 @@
 						<div class="list-product-description product-description-brd margin-bottom-30">
 							<div class="row">
 								<div class="col-sm-4">
-									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/28.jpg" alt=""></a>
+									<a href="fullinfo.php"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/28.jpg" alt=""></a>
 								</div>
 								<div class="col-sm-8 product-description">
 									<div class="overflow-h margin-bottom-5">
 										<ul class="list-inline overflow-h">
-											<li><h4 class="title-price"><a href="shop-ui-inner.html">Double-breasted</a></h4></li>
+											<li><h4 class="title-price"><a href="fullinfo.php">Merida 40D</a></h4></li>
 											<li><span class="gender text-uppercase">Мужской</span></li>
 											<li class="pull-right">
 												<ul class="list-inline product-ratings">
@@ -277,7 +274,7 @@
 										</div>
 										<p class="margin-bottom-20">Горный любительский велосипед Merida Matts 40-D 2012. Модель оснащена алюминиевой рамой. Установлены пружинно-эластомерная вилка RST Gila 100 ML, дисковые гидравлические тормоза, а также полупрофессиональное оборудование. Merida Matts 40-D 2012 прекрасно подойдёт для катания как в городе, так и по пересечённой местности.</p>
 										
-										<button type="button" class="btn-u btn-u-sea-shop">В корзину</button>
+										<button type="button" class="btn-u btn-u-sea-shop addProduct" data-id="1">В корзину</button>
 									</div>
 								</div>
 							</div>
@@ -286,12 +283,12 @@
 						<div class="list-product-description product-description-brd margin-bottom-30">
 							<div class="row">
 								<div class="col-sm-4">
-									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/29.jpg" alt=""></a>
+									<a href="fullinfo.php"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/29.jpg" alt=""></a>
 								</div>
 								<div class="col-sm-8 product-description">
 									<div class="overflow-h margin-bottom-5">
 										<ul class="list-inline overflow-h">
-											<li><h4 class="title-price"><a href="shop-ui-inner.html">Double-breasted</a></h4></li>
+											<li><h4 class="title-price"><a href="fullinfo.php">Merida 40D</a></h4></li>
 											<li><span class="gender text-uppercase">Мужской</span></li>
 											<li class="pull-right">
 												<ul class="list-inline product-ratings">
@@ -309,7 +306,7 @@
 										</div>
 										<p class="margin-bottom-20">Горный любительский велосипед Merida Matts 40-D 2012. Модель оснащена алюминиевой рамой. Установлены пружинно-эластомерная вилка RST Gila 100 ML, дисковые гидравлические тормоза, а также полупрофессиональное оборудование. Merida Matts 40-D 2012 прекрасно подойдёт для катания как в городе, так и по пересечённой местности.</p>
 										
-										<button type="button" class="btn-u btn-u-sea-shop">В корзину</button>
+										<button type="button" class="btn-u  btn-u-sea-shop addProduct" data-id="2">В корзину</button>
 									</div>
 								</div>
 							</div>
@@ -318,12 +315,12 @@
 						<div class="list-product-description product-description-brd margin-bottom-30">
 							<div class="row">
 								<div class="col-sm-4">
-									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/30.jpg" alt=""></a>
+									<a href="fullinfo.php"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/30.jpg" alt=""></a>
 								</div>
 								<div class="col-sm-8 product-description">
 									<div class="overflow-h margin-bottom-5">
 										<ul class="list-inline overflow-h">
-											<li><h4 class="title-price"><a href="shop-ui-inner.html">Double-breasted</a></h4></li>
+											<li><h4 class="title-price"><a href="fullinfo.php">Merida 40D</a></h4></li>
 											<li><span class="gender text-uppercase">Мужской</span></li>
 											<li class="pull-right">
 												<ul class="list-inline product-ratings">
@@ -341,7 +338,7 @@
 										</div>
 										<p class="margin-bottom-20">Горный любительский велосипед Merida Matts 40-D 2012. Модель оснащена алюминиевой рамой. Установлены пружинно-эластомерная вилка RST Gila 100 ML, дисковые гидравлические тормоза, а также полупрофессиональное оборудование. Merida Matts 40-D 2012 прекрасно подойдёт для катания как в городе, так и по пересечённой местности.</p>
 										
-										<button type="button" class="btn-u btn-u-sea-shop">В корзину</button>
+										<button type="button" class="btn-u  btn-u-sea-shop addProduct" data-id="3">В корзину</button>
 									</div>
 								</div>
 							</div>
@@ -350,12 +347,12 @@
 						<div class="list-product-description product-description-brd margin-bottom-30">
 							<div class="row">
 								<div class="col-sm-4">
-									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/30.jpg" alt=""></a>
+									<a href="fullinfo.php"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/30.jpg" alt=""></a>
 								</div>
 								<div class="col-sm-8 product-description">
 									<div class="overflow-h margin-bottom-5">
 										<ul class="list-inline overflow-h">
-											<li><h4 class="title-price"><a href="shop-ui-inner.html">Double-breasted</a></h4></li>
+											<li><h4 class="title-price"><a href="fullinfo.php">Merida 40D</a></h4></li>
 											<li><span class="gender text-uppercase">Мужской</span></li>
 											<li class="pull-right">
 												<ul class="list-inline product-ratings">
@@ -373,7 +370,7 @@
 										</div>
 										<p class="margin-bottom-20">Горный любительский велосипед Merida Matts 40-D 2012. Модель оснащена алюминиевой рамой. Установлены пружинно-эластомерная вилка RST Gila 100 ML, дисковые гидравлические тормоза, а также полупрофессиональное оборудование. Merida Matts 40-D 2012 прекрасно подойдёт для катания как в городе, так и по пересечённой местности.</p>
 										
-										<button type="button" class="btn-u btn-u-sea-shop">В корзину</button>
+										<button type="button" class="btn-u  btn-u-sea-shop addProduct" data-id="1">В корзину</button>
 									</div>
 								</div>
 							</div>
@@ -382,12 +379,12 @@
 						<div class="list-product-description product-description-brd">
 							<div class="row">
 								<div class="col-sm-4">
-									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/28.jpg" alt=""></a>
+									<a href="fullinfo.php"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/28.jpg" alt=""></a>
 								</div>
 								<div class="col-sm-8 product-description">
 									<div class="overflow-h margin-bottom-5">
 										<ul class="list-inline overflow-h">
-											<li><h4 class="title-price"><a href="shop-ui-inner.html">Double-breasted</a></h4></li>
+											<li><h4 class="title-price"><a href="fullinfo.php">Merida 40D</a></h4></li>
 											<li><span class="gender text-uppercase">Мужской</span></li>
 											<li class="pull-right">
 												<ul class="list-inline product-ratings">
@@ -405,7 +402,7 @@
 										</div>
 										<p class="margin-bottom-20">Горный любительский велосипед Merida Matts 40-D 2012. Модель оснащена алюминиевой рамой. Установлены пружинно-эластомерная вилка RST Gila 100 ML, дисковые гидравлические тормоза, а также полупрофессиональное оборудование. Merida Matts 40-D 2012 прекрасно подойдёт для катания как в городе, так и по пересечённой местности.</p>
 										
-										<button type="button" class="btn-u btn-u-sea-shop">В корзину</button>
+										<button type="button" class="btn-u  btn-u-sea-shop addProduct" data-id="2">В корзину</button>
 									</div>
 								</div>
 							</div>
