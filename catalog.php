@@ -260,7 +260,7 @@
 									<div class="overflow-h margin-bottom-5">
 										<ul class="list-inline overflow-h">
 											<li><h4 class="title-price"><a href="shop-ui-inner.html">Double-breasted</a></h4></li>
-											<li><span class="gender text-uppercase">Men</span></li>
+											<li><span class="gender text-uppercase">Мужской</span></li>
 											<li class="pull-right">
 												<ul class="list-inline product-ratings">
 													<li><i class="rating-selected fa fa-star"></i></li>
@@ -272,21 +272,12 @@
 											</li>
 										</ul>
 										<div class="margin-bottom-10">
-											<span class="title-price margin-right-10">$60.00</span>
-											<span class="title-price line-through">$95.00</span>
+											<span class="title-price margin-right-10">12 000</span>
+											<span class="title-price line-through">14 000</span>
 										</div>
-										<p class="margin-bottom-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin erat nec ornarevolu tpat. Etiam ut felis nec nisl eleifend lobortis. Aenean nibh est, hendrerit non conva.</p>
-										<ul class="list-inline add-to-wishlist margin-bottom-20">
-											<li class="wishlist-in">
-												<i class="fa fa-heart"></i>
-												<a href="#">Add to Wishlist</a>
-											</li>
-											<li class="compare-in">
-												<i class="fa fa-exchange"></i>
-												<a href="#">Add to Compare</a>
-											</li>
-										</ul>
-										<button type="button" class="btn-u btn-u-sea-shop">Add to Cart</button>
+										<p class="margin-bottom-20">Горный любительский велосипед Merida Matts 40-D 2012. Модель оснащена алюминиевой рамой. Установлены пружинно-эластомерная вилка RST Gila 100 ML, дисковые гидравлические тормоза, а также полупрофессиональное оборудование. Merida Matts 40-D 2012 прекрасно подойдёт для катания как в городе, так и по пересечённой местности.</p>
+										
+										<button type="button" class="btn-u btn-u-sea-shop">В корзину</button>
 									</div>
 								</div>
 							</div>
@@ -301,7 +292,7 @@
 									<div class="overflow-h margin-bottom-5">
 										<ul class="list-inline overflow-h">
 											<li><h4 class="title-price"><a href="shop-ui-inner.html">Double-breasted</a></h4></li>
-											<li><span class="gender text-uppercase">Men</span></li>
+											<li><span class="gender text-uppercase">Мужской</span></li>
 											<li class="pull-right">
 												<ul class="list-inline product-ratings">
 													<li><i class="rating-selected fa fa-star"></i></li>
@@ -313,21 +304,12 @@
 											</li>
 										</ul>
 										<div class="margin-bottom-10">
-											<span class="title-price margin-right-10">$60.00</span>
-											<span class="title-price line-through">$95.00</span>
+											<span class="title-price margin-right-10">12 000</span>
+											<span class="title-price line-through">14 000</span>
 										</div>
-										<p class="margin-bottom-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin erat nec ornarevolu tpat. Etiam ut felis nec nisl eleifend lobortis. Aenean nibh est, hendrerit non conva.</p>
-										<ul class="list-inline add-to-wishlist margin-bottom-20">
-											<li class="wishlist-in">
-												<i class="fa fa-heart"></i>
-												<a href="#">Add to Wishlist</a>
-											</li>
-											<li class="compare-in">
-												<i class="fa fa-exchange"></i>
-												<a href="#">Add to Compare</a>
-											</li>
-										</ul>
-										<button type="button" class="btn-u btn-u-sea-shop">Add to Cart</button>
+										<p class="margin-bottom-20">Горный любительский велосипед Merida Matts 40-D 2012. Модель оснащена алюминиевой рамой. Установлены пружинно-эластомерная вилка RST Gila 100 ML, дисковые гидравлические тормоза, а также полупрофессиональное оборудование. Merida Matts 40-D 2012 прекрасно подойдёт для катания как в городе, так и по пересечённой местности.</p>
+										
+										<button type="button" class="btn-u btn-u-sea-shop">В корзину</button>
 									</div>
 								</div>
 							</div>
@@ -342,7 +324,7 @@
 									<div class="overflow-h margin-bottom-5">
 										<ul class="list-inline overflow-h">
 											<li><h4 class="title-price"><a href="shop-ui-inner.html">Double-breasted</a></h4></li>
-											<li><span class="gender text-uppercase">Men</span></li>
+											<li><span class="gender text-uppercase">Мужской</span></li>
 											<li class="pull-right">
 												<ul class="list-inline product-ratings">
 													<li><i class="rating-selected fa fa-star"></i></li>
@@ -354,21 +336,12 @@
 											</li>
 										</ul>
 										<div class="margin-bottom-10">
-											<span class="title-price margin-right-10">$60.00</span>
-											<span class="title-price line-through">$95.00</span>
+											<span class="title-price margin-right-10">12 000</span>
+											<span class="title-price line-through">14 000</span>
 										</div>
-										<p class="margin-bottom-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin erat nec ornarevolu tpat. Etiam ut felis nec nisl eleifend lobortis. Aenean nibh est, hendrerit non conva.</p>
-										<ul class="list-inline add-to-wishlist margin-bottom-20">
-											<li class="wishlist-in">
-												<i class="fa fa-heart"></i>
-												<a href="#">Add to Wishlist</a>
-											</li>
-											<li class="compare-in">
-												<i class="fa fa-exchange"></i>
-												<a href="#">Add to Compare</a>
-											</li>
-										</ul>
-										<button type="button" class="btn-u btn-u-sea-shop">Add to Cart</button>
+										<p class="margin-bottom-20">Горный любительский велосипед Merida Matts 40-D 2012. Модель оснащена алюминиевой рамой. Установлены пружинно-эластомерная вилка RST Gila 100 ML, дисковые гидравлические тормоза, а также полупрофессиональное оборудование. Merida Matts 40-D 2012 прекрасно подойдёт для катания как в городе, так и по пересечённой местности.</p>
+										
+										<button type="button" class="btn-u btn-u-sea-shop">В корзину</button>
 									</div>
 								</div>
 							</div>
@@ -383,7 +356,7 @@
 									<div class="overflow-h margin-bottom-5">
 										<ul class="list-inline overflow-h">
 											<li><h4 class="title-price"><a href="shop-ui-inner.html">Double-breasted</a></h4></li>
-											<li><span class="gender text-uppercase">Men</span></li>
+											<li><span class="gender text-uppercase">Мужской</span></li>
 											<li class="pull-right">
 												<ul class="list-inline product-ratings">
 													<li><i class="rating-selected fa fa-star"></i></li>
@@ -395,21 +368,12 @@
 											</li>
 										</ul>
 										<div class="margin-bottom-10">
-											<span class="title-price margin-right-10">$60.00</span>
-											<span class="title-price line-through">$95.00</span>
+											<span class="title-price margin-right-10">12 000</span>
+											<span class="title-price line-through">14 000</span>
 										</div>
-										<p class="margin-bottom-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin erat nec ornarevolu tpat. Etiam ut felis nec nisl eleifend lobortis. Aenean nibh est, hendrerit non conva.</p>
-										<ul class="list-inline add-to-wishlist margin-bottom-20">
-											<li class="wishlist-in">
-												<i class="fa fa-heart"></i>
-												<a href="#">Add to Wishlist</a>
-											</li>
-											<li class="compare-in">
-												<i class="fa fa-exchange"></i>
-												<a href="#">Add to Compare</a>
-											</li>
-										</ul>
-										<button type="button" class="btn-u btn-u-sea-shop">Add to Cart</button>
+										<p class="margin-bottom-20">Горный любительский велосипед Merida Matts 40-D 2012. Модель оснащена алюминиевой рамой. Установлены пружинно-эластомерная вилка RST Gila 100 ML, дисковые гидравлические тормоза, а также полупрофессиональное оборудование. Merida Matts 40-D 2012 прекрасно подойдёт для катания как в городе, так и по пересечённой местности.</p>
+										
+										<button type="button" class="btn-u btn-u-sea-shop">В корзину</button>
 									</div>
 								</div>
 							</div>
@@ -424,7 +388,7 @@
 									<div class="overflow-h margin-bottom-5">
 										<ul class="list-inline overflow-h">
 											<li><h4 class="title-price"><a href="shop-ui-inner.html">Double-breasted</a></h4></li>
-											<li><span class="gender text-uppercase">Men</span></li>
+											<li><span class="gender text-uppercase">Мужской</span></li>
 											<li class="pull-right">
 												<ul class="list-inline product-ratings">
 													<li><i class="rating-selected fa fa-star"></i></li>
@@ -436,21 +400,12 @@
 											</li>
 										</ul>
 										<div class="margin-bottom-10">
-											<span class="title-price margin-right-10">$60.00</span>
-											<span class="title-price line-through">$95.00</span>
+											<span class="title-price margin-right-10">12 000</span>
+											<span class="title-price line-through">14 000</span>
 										</div>
-										<p class="margin-bottom-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin erat nec ornarevolu tpat. Etiam ut felis nec nisl eleifend lobortis. Aenean nibh est, hendrerit non conva.</p>
-										<ul class="list-inline add-to-wishlist margin-bottom-20">
-											<li class="wishlist-in">
-												<i class="fa fa-heart"></i>
-												<a href="#">Add to Wishlist</a>
-											</li>
-											<li class="compare-in">
-												<i class="fa fa-exchange"></i>
-												<a href="#">Add to Compare</a>
-											</li>
-										</ul>
-										<button type="button" class="btn-u btn-u-sea-shop">Add to Cart</button>
+										<p class="margin-bottom-20">Горный любительский велосипед Merida Matts 40-D 2012. Модель оснащена алюминиевой рамой. Установлены пружинно-эластомерная вилка RST Gila 100 ML, дисковые гидравлические тормоза, а также полупрофессиональное оборудование. Merida Matts 40-D 2012 прекрасно подойдёт для катания как в городе, так и по пересечённой местности.</p>
+										
+										<button type="button" class="btn-u btn-u-sea-shop">В корзину</button>
 									</div>
 								</div>
 							</div>
@@ -470,24 +425,7 @@
 			</div><!--/end row-->
 		</div><!--/end container-->
 		<!--=== End Content Part ===-->
-
-		<!--=== Shop Suvbscribe ===-->
-		<div class="shop-subscribe">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 md-margin-bottom-20">
-						<h2>subscribe to our weekly <strong>newsletter</strong></h2>
-					</div>
-					<div class="col-md-4">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Email your email...">
-							<span class="input-group-btn">
-								<button class="btn" type="button"><i class="fa fa-envelope-o"></i></button>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div><!--/end container-->
-		</div>
-		<!--=== End Shop Suvbscribe ===-->
-<? include 'footer.php';?>
+<?
+include $c.'subscribe.php'; // подписка на новости
+include 'footer.php'; //футер
+?>
