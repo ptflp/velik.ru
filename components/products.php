@@ -75,7 +75,7 @@
 				<div class="product-img">
 					<a href="fullinfo.php"><img class="full-width img-responsive" src="assets/img/blog/28-full.jpg" alt=""></a>
 					<a class="product-review" href="fullinfo.php">Быстрый просмотр</a>
-					<a class="add-to-cart addProduct" data-id="4" href="#"><i class="fa fa-shopping-cart"></i>В корзину</a>
+					<a class="add-to-cart addProduct" data-id="1" href="#"><i class="fa fa-shopping-cart"></i>В корзину</a>
 					<div class="shop-rgba-orange rgba-banner">29 000 <img src="assets/img/rub.png"></div>
 				</div>
 				<div class="product-description product-description-brd">
@@ -95,7 +95,7 @@
 				<div class="product-img">
 					<a href="fullinfo.php"><img class="full-width img-responsive" src="assets/img/blog/28-full.jpg" alt=""></a>
 					<a class="product-review" href="fullinfo.php">Быстрый просмотр</a>
-					<a class="add-to-cart addProduct" data-id="5" href="#"><i class="fa fa-shopping-cart"></i>В корзину</a>
+					<a class="add-to-cart addProduct" data-id="2" href="#"><i class="fa fa-shopping-cart"></i>В корзину</a>
 					<div class="shop-rgba-orange rgba-banner">29 000 <img src="assets/img/rub.png"></div>
 				</div>
 				<div class="product-description product-description-brd">
