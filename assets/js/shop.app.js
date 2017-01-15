@@ -94,8 +94,15 @@ var App = function () {
   function handlePleaseWait() {
   	var is_box_visible = true;
 		$(document).mouseleave(function(e){
-    	    if ((e.clientY < 0)&&(is_box_visible === true)) {
-                localStorage.setItem("g-popup", true);
+            console.log();
+    	    if ((e.clientY < 0)&&(is_box_visible === true)&&(localStorage.getItem('g-popup')<2)) {
+                var gpopup=localStorage.getItem('g-popup');
+                gpopup=parseInt(gpopup);
+                if (isNaN(gpopup)) {
+                    gpopup=0;
+                }                
+                gpopup++;
+                localStorage.setItem("g-popup", gpopup);
               	$('.g-popup-wrapper').show();
               	if ($('.g-popup-wrapper').is(':visible')) $('body').addClass('g-blur');
     	    }
