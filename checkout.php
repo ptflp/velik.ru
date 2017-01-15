@@ -142,7 +142,7 @@ include 'header.php'; //хидер
 														<div class="form-group">
 															<label class="col-sm-4 no-col-space control-label">Комментарий</label>
 															<div class="col-sm-8">
-																<textarea type="text" class="form-control required" name="comment" placeholder=""></textarea> 
+																<textarea type="text" class="form-control" name="comment" placeholder="Необязательно"></textarea> 
 															</div>
 														</div>
 													</div>
