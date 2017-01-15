@@ -1752,7 +1752,9 @@ li:first-child {
 	font-size: 13px;
 	border-color: #dedede;
 }
-
+.btn-group select {
+    height: 33px;
+}
 .sort-list-btn .btn-default:hover,
 .sort-list-btn .btn-default:focus,
 .sort-list-btn .btn-default:active,
