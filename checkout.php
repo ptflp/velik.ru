@@ -54,58 +54,46 @@ include 'header.php'; //хидер
 						<section class="billing-info">
 							<div class="row">
 								<div class="col-md-6 md-margin-bottom-40">
-									<h2 class="title-type">Billing Address</h2>
+									<h2 class="title-type">Данные о покупателе</h2>
 									<div class="billing-info-inputs checkbox-list">
 										<div class="row">
 											<div class="col-sm-6">
-												<input id="name" type="text" placeholder="First Name" name="firstname" class="form-control required">
-												<input id="email" type="text" placeholder="Email" name="email" class="form-control required email">
+												<input id="name" type="text" placeholder="Имя" name="firstname" class="form-control required">
 											</div>
 											<div class="col-sm-6">
-												<input id="surname" type="text" placeholder="Last Name" name="lastname" class="form-control required">
-												<input id="phone" type="tel" placeholder="Phone" name="phone" class="form-control required">
+												<input id="surname" type="text" placeholder="Фамилия" name="lastname" class="form-control required">
+											</div>
+											<div class="col-sm-6">
+												<input type="text" placeholder="Отчество" name="surname" class="form-control required">
+											</div>
+											<div class="col-sm-6">
+												<input id="email" type="text" placeholder="email" name="surname" class="form-control required email">
 											</div>
 										</div>
-										<input id="billingAddress" type="text" placeholder="Address Line 1" name="address1" class="form-control required">
-										<input id="billingAddress2" type="text" placeholder="Address Line 2" name="address2" class="form-control required">
-										<div class="row">
-											<div class="col-sm-6">
-												<input id="city" type="text" placeholder="City" name="city" class="form-control required">
-											</div>
-											<div class="col-sm-6">
-												<input id="zip" type="text" placeholder="Zip/Postal Code" name="zip" class="form-control required">
-											</div>
-										</div>
-
+										<input id="phone" type="tel" placeholder="Телефон" name="phone" class="form-control required">
 										<label class="checkbox text-left">
 											<input type="checkbox" name="checkbox"/>
 											<i></i>
-											Ship item to the above billing address
+											Я согласен(-на) на обработку персональных данных , с условиями предоставления услуг.
 										</label>
 									</div>
 								</div>
 
 								<div class="col-md-6">
-									<h2 class="title-type">Shipping Address</h2>
+									<h2 class="title-type">Адрес доставки</h2>
 									<div class="billing-info-inputs checkbox-list">
 										<div class="row">
-											<div class="col-sm-6">
-												<input id="name2" type="text" placeholder="First Name" name="firstname" class="form-control">
-												<input id="email2" type="text" placeholder="Email" name="email" class="form-control email">
+											<div class="col-sm-8">
+												<input id="shippingAddress" type="text" placeholder="Улица" name="address" class="form-control required">
+											</div>
+											<div class="col-sm-4">
+												<input id="shippingAddress" type="text" placeholder="№ дома/корпуса" name="hnumber" class="form-control required">
 											</div>
 											<div class="col-sm-6">
-												<input id="surname2" type="text" placeholder="Last Name" name="lastname" class="form-control">
-												<input id="phone2" type="tel" placeholder="Phone" name="phone" class="form-control">
-											</div>
-										</div>
-										<input id="shippingAddress" type="text" placeholder="Address Line 1" name="address1" class="form-control">
-										<input id="shippingAddress2" type="text" placeholder="Address Line 2" name="address2" class="form-control">
-										<div class="row">
-											<div class="col-sm-6">
-												<input id="city2" type="text" placeholder="City" name="city" class="form-control">
+												<input id="city" type="text" placeholder="Город" name="city" class="form-control required">
 											</div>
 											<div class="col-sm-6">
-												<input id="zip2" type="text" placeholder="Zip/Postal Code" name="zip" class="form-control">
+												<input id="zip" type="text" placeholder="Почтовый	индекс" name="zip" class="form-control required">
 											</div>
 										</div>
 									</div>
@@ -123,74 +111,40 @@ include 'header.php'; //хидер
 						<section>
 							<div class="row">
 								<div class="col-md-6 md-margin-bottom-50">
-									<h2 class="title-type">Choose a payment method</h2>
+									<h2 class="title-type">Выберите вариант оплаты и доставки</h2>
 									<!-- Accordion -->
 									<div class="accordion-v2">
 										<div class="panel-group" id="accordion">
 											<div class="panel panel-default">
 												<div class="panel-heading">
 													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-															<i class="fa fa-credit-card"></i>
-															Credit or Debit Card
+														<a href="#">
+															<i class="fa fa-plane" aria-hidden="true"></i>
 														</a>
 													</h4>
 												</div>
 												<div id="collapseOne" class="panel-collapse collapse in">
 													<div class="panel-body cus-form-horizontal">
 														<div class="form-group">
-															<label class="col-sm-4 no-col-space control-label">Cardholder Name</label>
+															<label class="col-sm-4 no-col-space control-label">Тип оплаты/доставки</label>
 															<div class="col-sm-8">
-																<input type="text" class="form-control required" name="cardholder" placeholder="">
+																<label class="select">
+																	<select name="typeD">
+																		<option value="0">Самовывоз</option>
+																		<option value="1">Бесплатная доставка(предоплата</option>
+																		<option value="2">Доставка за ваш счет</option>
+																		<option value="3">Почтой EMS или СДЭК</option>
+																	</select>
+																	<i></i>
+																</label>
 															</div>
 														</div>
 														<div class="form-group">
-															<label class="col-sm-4 no-col-space control-label">Card Number</label>
+															<label class="col-sm-4 no-col-space control-label">Комментарий</label>
 															<div class="col-sm-8">
-																<input type="text" class="form-control required" name="cardnumber" placeholder="">
+																<textarea type="text" class="form-control required" name="comment" placeholder=""></textarea> 
 															</div>
 														</div>
-														<div class="form-group">
-															<label class="col-sm-4 no-col-space control-label">Payment Types</label>
-															<div class="col-sm-8">
-																<ul class="list-inline payment-type">
-																	<li><i class="fa fa-cc-paypal"></i></li>
-																	<li><i class="fa fa-cc-visa"></i></li>
-																	<li><i class="fa fa-cc-mastercard"></i></li>
-																	<li><i class="fa fa-cc-discover"></i></li>
-																</ul>
-															</div>
-														</div>
-														<div class="form-group">
-															<label class="col-sm-4">Expiration Date</label>
-															<div class="col-sm-8 input-small-field">
-																<input type="text" name="mm" placeholder="MM" class="form-control required sm-margin-bottom-20">
-																<span class="slash">/</span>
-																<input type="text" name="yy" placeholder="YY" class="form-control required">
-															</div>
-														</div>
-														<div class="form-group">
-															<label class="col-sm-4 no-col-space control-label">CSC</label>
-															<div class="col-sm-8 input-small-field">
-																<input type="text" name="number" placeholder="" class="form-control required">
-																<a href="#">What's this?</a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-															<i class="fa fa-paypal"></i>
-															Pay with PayPal
-														</a>
-													</h4>
-												</div>
-												<div id="collapseTwo" class="panel-collapse collapse">
-													<div class="content margin-left-10">
-														<a href="#"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png" alt="PayPal"></a>
 													</div>
 												</div>
 											</div>
@@ -200,21 +154,22 @@ include 'header.php'; //хидер
 								</div>
 
 								<div class="col-md-6">
-									<h2 class="title-type">Frequently asked questions</h2>
+									<h2 class="title-type">Возможные варианты доставки:</h2>
 									<!-- Accordion -->
 									<div class="accordion-v2 plus-toggle">
 										<div class="panel-group" id="accordion-v2">
 											<div class="panel panel-default">
 												<div class="panel-heading">
 													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion-v2" href="#collapseOne-v2">
-															What payments methods can I use?
+														<a data-toggle="collapse" class="collapsed" data-parent="#accordion-v2" href="#collapseOne-v2">
+															Самовывоз
 														</a>
 													</h4>
 												</div>
-												<div id="collapseOne-v2" class="panel-collapse collapse in">
+												<div id="collapseOne-v2" class="panel-collapse collapse">
 													<div class="panel-body">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit, felis vel tincidunt sodales, urna metus rutrum leo, sit amet finibus velit ante nec lacus. Cras erat nunc, pulvinar nec leo at, rhoncus elementum orci. Nullam ut sapien ultricies, gravida ante ut, ultrices nunc.
+														Самовывоз осуществляется с нашего склада (г.Новосибирск), время работы склада Пн-Сб 10:00 - 17.00
+														Вс - Выходной.
 													</div>
 												</div>
 											</div>
@@ -222,13 +177,13 @@ include 'header.php'; //хидер
 												<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" class="collapsed" data-parent="#accordion-v2" href="#collapseTwo-v2">
-															Can I use gift card to pay for my purchase?
+															Бесплатная доставка *(предоплата)
 														</a>
 													</h4>
 												</div>
 												<div id="collapseTwo-v2" class="panel-collapse collapse">
 													<div class="panel-body">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit, felis vel tincidunt sodales, urna metus rutrum leo, sit amet finibus velit ante nec lacus. Cras erat nunc, pulvinar nec leo at, rhoncus elementum orci. Nullam ut sapien ultricies, gravida ante ut, ultrices nunc.
+														Предоставляем бесплатно только при полной предоплате. Доставка занимает максимум 20-25 дней по России, кроме направления Ростовская область и Краснодарский край 25-30 дней. Доставка до терминала транспортной компании и оформление груза - бесплатно. Расходы транспортной компании оплачивает наша компания. Транспортные компании: ПЭК, Деловые линии, Кит и др.
 													</div>
 												</div>
 											</div>
@@ -236,27 +191,30 @@ include 'header.php'; //хидер
 												<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" class="collapsed" data-parent="#accordion-v2" href="#collapseThree-v2">
-															Will I be charged when I place my order?
+															Доставка за ваш счет (оплата при получении) 
 														</a>
 													</h4>
 												</div>
 												<div id="collapseThree-v2" class="panel-collapse collapse">
 													<div class="panel-body">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit, felis vel tincidunt sodales, urna metus rutrum leo, sit amet finibus velit ante nec lacus. Cras erat nunc, pulvinar nec leo at, rhoncus elementum orci. Nullam ut sapien ultricies, gravida ante ut, ultrices nunc.
+														Доставка транспортной компанией занимает максимум 40-45 дней по России, кроме направления Ростовская область и Краснодарский край 45-50 дней.
+Расходы транспортной компании оплачивает получатель при оформлении товара. Транспортные компании: ПЭК, Деловые линии, Кит и др. Отправка по всем регионам России! 
 													</div>
+													<h2 class="text-center">Калькулятор</h2>
+													<iframe class="embed-responsive-item" src="http://public.services.dellin.ru/calculatorTool2/" height="400" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" width="100%"></iframe>
 												</div>
 											</div>
 											<div class="panel panel-default">
 												<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" class="collapsed" data-parent="#accordion-v2" href="#collapseFour-v2">
-															How long will it take to get my order?
+															Почтой EMS или СДЭК
 														</a>
 													</h4>
 												</div>
 												<div id="collapseFour-v2" class="panel-collapse collapse">
 													<div class="panel-body">
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit, felis vel tincidunt sodales, urna metus rutrum leo, sit amet finibus velit ante nec lacus. Cras erat nunc, pulvinar nec leo at, rhoncus elementum orci. Nullam ut sapien ultricies, gravida ante ut, ultrices nunc.
+														Доставка в течении 20 дней. Так как EMS и СДЭК работает по предоплате, транспортные расходы оплачивает покупатель ДО ОТПРАВЛЕНИЯ ЗАКАЗА. С тарифами можно ознакомиться на сайте <a href="http://emspost.ru" target="_blank">emspost.ru</a>. По стоимости доставки транспортной компанией СДЭК вам окажет помощь наш менеджер.
 													</div>
 												</div>
 											</div>
