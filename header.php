@@ -42,6 +42,7 @@
 
 	<!-- CSS Global Compulsory -->
 	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/pages/shortcode_timeline2.css">
 	<link rel="stylesheet" href="assets/css/shop.style.css">
 
 	<!-- CSS Header and Footer -->
@@ -203,7 +204,7 @@
 							<li><a href="#">Доставка</a></li>
 							<li><a href="#">Оптовикам</a></li>
 							<li><a href="#">Вопросы</a></li>
-							<li><a href="#">Новости</a></li>
+							<li><a href="news.php">Новости</a></li>
 							<!-- Main Demo -->
 						</ul>
 						<!-- End Nav Menu -->
