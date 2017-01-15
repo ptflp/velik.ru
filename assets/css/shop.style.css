@@ -1689,10 +1689,10 @@ li:first-child {
 }
 
 .result-category h2 {
-	float: left;
-	font-size: 30px;
-	margin-right: 20px;
-	text-transform: uppercase;
+    float: left;
+    font-size: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
 }
 
 .result-category .badge-results {

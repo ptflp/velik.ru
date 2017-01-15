@@ -2,12 +2,11 @@
 		<!--=== Breadcrumbs v4 ===-->
 		<div class="breadcrumbs-v4">
 			<div class="container">
-				<span class="page-name">Product Filter Page</span>
-				<h1>Maecenas <span class="shop-green">enim</span> sapien</h1>
+				<span class="page-name">Умный фильтр</span>
+				<h1>Каталог <span class="shop-green">товаров</span></h1>
 				<ul class="breadcrumb-v4-in">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="">Product</a></li>
-					<li class="active">Product Filter Page</li>
+					<li><a href="index.php">Главная</a></li>
+					<li class="active">Каталог</li>
 				</ul>
 			</div><!--/end container-->
 		</div>
@@ -17,13 +16,13 @@
 		<div class="content container">
 			<div class="row">
 				<div class="col-md-3 filter-by-block md-margin-bottom-60">
-					<h1>Filter By</h1>
+					<h1>Умный фильтр</h1>
 					<div class="panel-group" id="accordion">
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h2 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-										Brands
+										Брэнды
 										<i class="fa fa-angle-down"></i>
 									</a>
 								</h2>
@@ -35,7 +34,7 @@
 											<label class="checkbox">
 												<input type="checkbox" name="checkbox" checked />
 												<i></i>
-												Calvin Klein
+												Merida
 												<small><a href="#">(23)</a></small>
 											</label>
 										</li>
@@ -43,7 +42,7 @@
 											<label class="checkbox">
 												<input type="checkbox" name="checkbox" checked />
 												<i></i>
-												Gucci
+												Cube
 												<small><a href="#">(4)</a></small>
 											</label>
 										</li>
@@ -51,7 +50,7 @@
 											<label class="checkbox">
 												<input type="checkbox" name="checkbox" />
 												<i></i>
-												Adidas
+												GT
 												<small><a href="#">(11)</a></small>
 											</label>
 										</li>
@@ -59,7 +58,7 @@
 											<label class="checkbox">
 												<input type="checkbox" name="checkbox" />
 												<i></i>
-												Puma
+												Specialized
 												<small><a href="#">(3)</a></small>
 											</label>
 										</li>
@@ -67,7 +66,7 @@
 											<label class="checkbox">
 												<input type="checkbox" name="checkbox" />
 												<i></i>
-												Zara
+												Giant
 												<small><a href="#">(87)</a></small>
 											</label>
 										</li>
@@ -82,7 +81,7 @@
 							<div class="panel-heading">
 								<h2 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion-v2" href="#collapseTwo">
-										Categories
+										Категории
 										<i class="fa fa-angle-down"></i>
 									</a>
 								</h2>
@@ -94,7 +93,7 @@
 											<label class="checkbox">
 												<input type="checkbox" name="checkbox" checked />
 												<i></i>
-												Clothes
+												Детские
 												<small><a href="#">(23)</a></small>
 											</label>
 										</li>
@@ -102,7 +101,7 @@
 											<label class="checkbox">
 												<input type="checkbox" name="checkbox" checked />
 												<i></i>
-												Glasses
+												Мужские
 												<small><a href="#">(4)</a></small>
 											</label>
 										</li>
@@ -110,7 +109,7 @@
 											<label class="checkbox">
 												<input type="checkbox" name="checkbox" />
 												<i></i>
-												Shoes
+												Женские
 												<small><a href="#">(11)</a></small>
 											</label>
 										</li>
@@ -125,7 +124,7 @@
 							<div class="panel-heading">
 								<h2 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion-v3" href="#collapseThree">
-										Size
+										Размер
 										<i class="fa fa-angle-down"></i>
 									</a>
 								</h2>
@@ -137,7 +136,7 @@
 											<label class="checkbox">
 												<input type="checkbox" name="checkbox" />
 												<i></i>
-												S
+												18'
 												<small><a href="#">(23)</a></small>
 											</label>
 										</li>
@@ -145,7 +144,7 @@
 											<label class="checkbox">
 												<input type="checkbox" name="checkbox" checked />
 												<i></i>
-												M
+												19'
 												<small><a href="#">(4)</a></small>
 											</label>
 										</li>
@@ -153,7 +152,7 @@
 											<label class="checkbox">
 												<input type="checkbox" name="checkbox" />
 												<i></i>
-												L
+												20'
 												<small><a href="#">(11)</a></small>
 											</label>
 										</li>
@@ -161,7 +160,7 @@
 											<label class="checkbox">
 												<input type="checkbox" name="checkbox" />
 												<i></i>
-												XL
+												21'
 												<small><a href="#">(3)</a></small>
 											</label>
 										</li>
@@ -176,7 +175,7 @@
 							<div class="panel-heading">
 								<h2 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion-v4" href="#collapseFour">
-										Price
+										Цена
 										<i class="fa fa-angle-down"></i>
 									</a>
 								</h2>
@@ -198,7 +197,7 @@
 							<div class="panel-heading">
 								<h2 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion-v5" href="#collapseFive">
-										Color
+										Цвет
 										<i class="fa fa-angle-down"></i>
 									</a>
 								</h2>
@@ -218,43 +217,14 @@
 							</div>
 						</div>
 					</div><!--/end panel group-->
-
-					<div class="panel-group margin-bottom-30" id="accordion-v6">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h2 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion-v6" href="#collapseSix">
-										Rating
-										<i class="fa fa-angle-down"></i>
-									</a>
-								</h2>
-							</div>
-							<div id="collapseSix" class="panel-collapse collapse in">
-								<div class="panel-body">
-									<div class="stars-ratings stars-ratings-label">
-										<input type="radio" name="stars-rating" id="stars-rating-5">
-										<label for="stars-rating-5"><i class="fa fa-star"></i></label>
-										<input type="radio" name="stars-rating" id="stars-rating-4">
-										<label for="stars-rating-4"><i class="fa fa-star"></i></label>
-										<input type="radio" name="stars-rating" id="stars-rating-3">
-										<label for="stars-rating-3"><i class="fa fa-star"></i></label>
-										<input type="radio" name="stars-rating" id="stars-rating-2">
-										<label for="stars-rating-2"><i class="fa fa-star"></i></label>
-										<input type="radio" name="stars-rating" id="stars-rating-1">
-										<label for="stars-rating-1"><i class="fa fa-star"></i></label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!--/end panel group-->
-					<button type="button" class="btn-u btn-brd btn-brd-hover btn-u-lg btn-u-sea-shop btn-block">Reset</button>
+					<button type="button" class="btn-u btn-brd btn-brd-hover btn-u-lg btn-u-sea-shop btn-block">Сбросить</button>
 				</div>
 
 				<div class="col-md-9">
 					<div class="row margin-bottom-5">
 						<div class="col-sm-4 result-category">
-							<h2>Men</h2>
-							<small class="shop-bg-red badge-results">45 Results</small>
+							<h2>Найдено:</h2>
+							<small class="shop-bg-red badge-results">45 моделей</small>
 						</div>
 						<div class="col-sm-8">
 							<ul class="list-inline clear-both">
@@ -263,30 +233,16 @@
 									<a href="shop-ui-filter-grid.html"><i class="fa fa-th"></i></a>
 								</li>
 								<li class="sort-list-btn">
-									<h3>Sort By :</h3>
-									<div class="btn-group">
-										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-											Popularity <span class="caret"></span>
-										</button>
-										<ul class="dropdown-menu" role="menu">
-											<li><a href="#">All</a></li>
-											<li><a href="#">Best Sales</a></li>
-											<li><a href="#">Top Last Week Sales</a></li>
-											<li><a href="#">New Arrived</a></li>
-										</ul>
-									</div>
-								</li>
-								<li class="sort-list-btn">
-									<h3>Show :</h3>
+									<h3>Показать :</h3>
 									<div class="btn-group">
 										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 											20 <span class="caret"></span>
 										</button>
 										<ul class="dropdown-menu" role="menu">
-											<li><a href="#">All</a></li>
+											<li><a href="#">Все</a></li>
+											<li><a href="#">50</a></li>
+											<li><a href="#">20</a></li>
 											<li><a href="#">10</a></li>
-											<li><a href="#">5</a></li>
-											<li><a href="#">3</a></li>
 										</ul>
 									</div>
 								</li>
@@ -298,7 +254,7 @@
 						<div class="list-product-description product-description-brd margin-bottom-30">
 							<div class="row">
 								<div class="col-sm-4">
-									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/16.jpg" alt=""></a>
+									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/28.jpg" alt=""></a>
 								</div>
 								<div class="col-sm-8 product-description">
 									<div class="overflow-h margin-bottom-5">
@@ -339,7 +295,7 @@
 						<div class="list-product-description product-description-brd margin-bottom-30">
 							<div class="row">
 								<div class="col-sm-4">
-									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/17.jpg" alt=""></a>
+									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/29.jpg" alt=""></a>
 								</div>
 								<div class="col-sm-8 product-description">
 									<div class="overflow-h margin-bottom-5">
@@ -380,7 +336,7 @@
 						<div class="list-product-description product-description-brd margin-bottom-30">
 							<div class="row">
 								<div class="col-sm-4">
-									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/21.jpg" alt=""></a>
+									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/30.jpg" alt=""></a>
 								</div>
 								<div class="col-sm-8 product-description">
 									<div class="overflow-h margin-bottom-5">
@@ -421,7 +377,7 @@
 						<div class="list-product-description product-description-brd margin-bottom-30">
 							<div class="row">
 								<div class="col-sm-4">
-									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/22.jpg" alt=""></a>
+									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/30.jpg" alt=""></a>
 								</div>
 								<div class="col-sm-8 product-description">
 									<div class="overflow-h margin-bottom-5">
@@ -462,7 +418,7 @@
 						<div class="list-product-description product-description-brd">
 							<div class="row">
 								<div class="col-sm-4">
-									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/23.jpg" alt=""></a>
+									<a href="shop-ui-inner.html"><img class="img-responsive sm-margin-bottom-20" src="assets/img/blog/28.jpg" alt=""></a>
 								</div>
 								<div class="col-sm-8 product-description">
 									<div class="overflow-h margin-bottom-5">
