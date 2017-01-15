@@ -40,6 +40,7 @@ var StepWizard = function () {
                                 toastr["error"]("В корзине нет товаров");
                                 return false;
                             } else {
+                                toastr["warning"]("Пожалуйста заполните форму");
                                 return form.valid();
                             }  
                         
