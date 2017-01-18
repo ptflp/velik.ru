@@ -57,11 +57,11 @@ header {
   clear: both;
 }
 .dropdown-menu-overlay {
-  position: absolute;
+  position: fixed;
   display: none;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 30;
   width: 100vw;
   height: 100vh;
   background-color: #000;
