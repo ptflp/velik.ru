@@ -73,10 +73,11 @@
     <!-- Menu Collapsible-->
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/icons.css">
-    <link rel="stylesheet" href="assets/css/checkboxes.css"> 
+    <link rel="stylesheet" href="assets/css/checkboxes.css">
 </head>
 
 <body class="header-fixed">
+	<div class="dropdown-menu-overlay"></div>
 	<div class="wrapper">
 		<div id="loading">
 			<div class="overlaybg">
@@ -118,7 +119,7 @@
 			</div>
 			<!-- End Topbar v3 -->
 
-		
+
 			<!-- Navbar -->
 			<div class="navbar navbar-default mega-menu" role="navigation">
 				<div class="container">
@@ -194,7 +195,7 @@
 							  								</li>
 							                                <li class="dropdown-menu-li" data-filter-type="bmx" data-filter-content-on='1002'>
 							                                  <a href="#" class="dropdown-menu-link">
-							                                    <i class='dropdown-menu-icon icon-2'></i> 
+							                                    <i class='dropdown-menu-icon icon-2'></i>
 							                                    Велосипеды
 							                                  </a>
 							                                </li>
@@ -206,7 +207,7 @@
 							  								</li>
 							                                <li class="dropdown-menu-li"  data-filter-content-on='1002'>
 							                                  <a href="#" class="dropdown-menu-link">
-							                                    <i class='dropdown-menu-icon icon-4'></i> 
+							                                    <i class='dropdown-menu-icon icon-4'></i>
 							                                    Велосипеды
 							                                  </a>
 							                                </li>
@@ -395,4 +396,5 @@
 			</div>
 			<!-- End Navbar -->
 		</div>
+
 		<!--=== End Header v5 ===-->
