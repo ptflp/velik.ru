@@ -70,10 +70,10 @@
 	<!-- CSS Customization -->
 	<link rel="stylesheet" href="assets/css/custom.css">
 
-    <!-- Menu Collapsible -->
+    <!-- Menu Collapsible-->
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/icons.css">
-    <link rel="stylesheet" href="assets/css/checkboxes.css">
+    <link rel="stylesheet" href="assets/css/checkboxes.css"> 
 </head>
 
 <body class="header-fixed">

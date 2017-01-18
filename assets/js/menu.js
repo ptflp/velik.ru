@@ -126,5 +126,5 @@ $('.dropdown-content-div:first').css('display','block');
     });
 
   }
-  $(".content").mCustomScrollbar();
+  //$(".content").mCustomScrollbar();
 });
