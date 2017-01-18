@@ -69,17 +69,22 @@
 
 	<!-- CSS Customization -->
 	<link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Menu Collapsible -->
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/checkboxes.css">
 </head>
 
 <body class="header-fixed">
 	<div class="wrapper">
-	<div id="loading">
-		<div class="overlaybg">
+		<div id="loading">
+			<div class="overlaybg">
+			</div>
+			<div class="loaderfx">
+				<img class="img-responsive" width="120" src="assets/img/loader.gif">
+			</div>
 		</div>
-		<div class="loaderfx">
-			<img class="img-responsive" width="120" src="assets/img/loader.gif">
-		</div>
-	</div>
 		<!--=== Header v5 ===-->
 		<div class="header-v5 header-static">
 			<!-- Topbar v3 -->
@@ -156,59 +161,236 @@
 					</div>
 					<!-- End Shopping Cart -->
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse navbar-responsive-collapse">
-						<!-- Nav Menu -->
-						<ul class="nav navbar-nav">
-							<!-- Pages -->
-							<li class="dropdown active">
-								<a href="index.php">
-									Главная
-								</a>
-							</li>
-							<!-- End Pages -->
+  					<!-- Collect the nav links, forms, and other content for toggling -->
+  					<div class="collapse navbar-collapse navbar-responsive-collapse">
+  						<!-- Nav Menu -->
+  						<ul class="nav navbar-nav">
+  							<!-- Pages -->
+  							<li class="active">
+  								<a href="index.php">
+  									Главная
+  								</a>
+  							</li>
+  							<!-- End Pages -->
 
-							<!-- Gifts -->
-							<li class="dropdown mega-menu-fullwidth">
-								<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
-									Каталог
-								</a>
-								<ul class="dropdown-menu">
-									<li>
-										<div class="mega-menu-content">
-											<div class="container">
-												<div class="row">
-													<div class="col-md-3 col-sm-12 col-xs-12 md-margin-bottom-30">
-														<h3 class="mega-menu-heading">Pellentes que nec diam lectus</h3>
-														<p>Proin pulvinar libero quis auctor pharet ra. Aenean fermentum met us orci, sedf eugiat augue pulvina r vitae. Nulla dolor nisl, molestie nec aliquam vitae, gravida sodals dolor...</p>
-														<a href="catalog.php"><button type="button" class="btn-u btn-u-dark">Перейти в каталог</button></a>
-													</div>
-													<div class="col-md-3 col-sm-4 col-xs-4 md-margin-bottom-30">
-														<a href="#"><img class="product-offers img-responsive" src="assets/img/blog/28.jpg" alt=""></a>
-													</div>
-													<div class="col-md-3 col-sm-4 col-xs-4 sm-margin-bottom-30">
-														<a href="#"><img class="product-offers img-responsive" src="assets/img/blog/29.jpg" alt=""></a>
-													</div>
-													<div class="col-md-3 col-sm-4 col-xs-4">
-														<a href="#"><img class="product-offers img-responsive" src="assets/img/blog/30.jpg" alt=""></a>
-													</div>
-												</div><!--/end row-->
-											</div><!--/end container-->
-										</div><!--/end mega menu content-->
-									</li>
-								</ul><!--/end dropdown-menu-->
-							</li>
-							<!-- End Gifts -->
-							<!-- Main Demo -->
-							<li><a href="#">Оплата</a></li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Оптовикам</a></li>
-							<li><a href="#">Вопросы</a></li>
-							<li><a href="news.php">Новости</a></li>
-							<!-- Main Demo -->
-						</ul>
-						<!-- End Nav Menu -->
-					</div>
+  							<!-- Gifts -->
+  							<li class="dropdown mega-menu-fullwidth" id='dropdown_toggler_li'>
+  								<a href="catalog.php"  id="dropdown_toggler">
+  									Каталог
+  								</a>
+  								<ul class="dropdown-menu" id="dropdown_element">
+  									<li>
+  										<div class="mega-menu-content">
+  											<div class="container">
+  												<div class="row">
+                            						<!-- Drop Down Left Menu -->
+  													<div class="col-md-2 col-sm-12 col-xs-12 md-margin-bottom-30 mCustomScrollbar dropdown-menu__scroll">
+  														<ul class="dropdown-menu-ul">
+							                                <li class="dropdown-menu-li" data-filter-type="bmx" data-filter-content-on='1001'>
+							                                  <a href="#" class="dropdown-menu-link">
+							                                    <i class='dropdown-menu-icon icon-1'></i>
+							                                    Сноуборды
+							                                  </a>
+							  								</li>
+							                                <li class="dropdown-menu-li" data-filter-type="bmx" data-filter-content-on='1002'>
+							                                  <a href="#" class="dropdown-menu-link">
+							                                    <i class='dropdown-menu-icon icon-2'></i> 
+							                                    Велосипеды
+							                                  </a>
+							                                </li>
+							                                <li class="dropdown-menu-li" data-filter-type="gornye"  data-filter-content-on='1001'>
+							                                  <a href="#" class="dropdown-menu-link">
+							                                    <i class='dropdown-menu-icon icon-3'></i>
+							                                    Сноуборды
+							                                  </a>
+							  								</li>
+							                                <li class="dropdown-menu-li"  data-filter-content-on='1002'>
+							                                  <a href="#" class="dropdown-menu-link">
+							                                    <i class='dropdown-menu-icon icon-4'></i> 
+							                                    Велосипеды
+							                                  </a>
+							                                </li>
+							                                <li class="dropdown-menu-li"  data-filter-content-on='1001'>
+							                                  <a href="#" class="dropdown-menu-link">
+							                                    <i class='dropdown-menu-icon icon-5'></i>
+							                                    Сноуборды
+							                                  </a>
+							  								</li>
+  														</ul>
+  													</div>
+						                            <!-- Dropdown Content -->
+						                            <!-- filter content 1001 -->
+							  						<div class="col-md-8 dropdown-content-div" data-filter-content='1001'>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/sanki-kolyaski.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Санки коляски</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/sanki-kolyaski.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Санки коляски</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/sanki-kolyaski.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Санки коляски</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/sanki-kolyaski.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Санки коляски</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/sanki-kolyaski.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Санки коляски</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/sanki-kolyaski.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Санки коляски</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/velo-trenajer.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Велотренажер</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/gyroscooter.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Гироскутер</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/gyro-xiaomi.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Гироскутер Xiaomi</p>
+						                                </a>
+						                              </div>
+  													</div>
+						                            <!-- filter content 1002 -->
+						                            <div class="col-md-8 dropdown-content-div" data-filter-content='1002'>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/sanki-kolyaski.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Санки коляски 213</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/sanki-kolyaski.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Санки коляски</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/sanki-kolyaski.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Санки коляски</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/sanki-kolyaski.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Санки коляски</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/velo-trenajer.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Велотренажер</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/gyroscooter.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Гироскутер</p>
+						                                </a>
+						                              </div>
+						                              <div class="col-md-3 dropdown-content-element">
+						                                <a href="">
+						                                  <img src="image/gyro-xiaomi.jpg" alt="" class="dropdown-content-element-image">
+						                                  <p class="dropdown-content-element-title">Гироскутер Xiaomi</p>
+						                                </a>
+						                              </div>
+  													</div>
+						                            <!-- Dropdown Filter -->
+						                            <div class="col-md-2 col-sm-4 col-xs-4">
+														<ul class="nav nav-tabs dropdown-filter">
+															<li class="dropdown-filter__element active"><a href="" data-filtertab='types'>Виды</a></li>
+                            								<li class="dropdown-filter__element  "><a href="" data-filtertab='brands'>Бренды</a></li>
+														</ul>
+						                              <div class="dropdown-filter__content">
+						                                <div class="dropdown-filter__types" id='types'>
+						                                  <div class="checkbox">
+						                                    <input type="checkbox" id="bmx" name='check' class="" >
+						                                    <label for="bmx">BMX</label>
+						                                  </div>
+						                                  <div class="checkbox">
+						                                    <input type="checkbox" id="gornye" name='check' class="" >
+						                                    <label for="gornye">Горные</label>
+						                                  </div>
+						                                  <div class="checkbox">
+						                                    <input type="checkbox" id="woman" name='check' class="" >
+						                                    <label for="woman">Женские</label>
+						                                  </div>
+						                                  <div class="checkbox">
+						                                    <input type="checkbox" id="men" name='check' class="" >
+						                                    <label for="men">Мужские</label>
+						                                  </div>
+						                                  <div class="checkbox">
+						                                    <input type="checkbox" id="kid" name='check' class="" >
+						                                    <label for="kid">Детские</label>
+						                                  </div>
+						                                </div>
+						                                <div class="dropdown-filter__brands" id="brands">
+						                                  <div class="checkbox">
+						                                    <input type="checkbox" id="yahoo" name='check' class="" >
+						                                    <label for="yahoo">Yahoo</label>
+						                                  </div>
+						                                  <div class="checkbox">
+						                                    <input type="checkbox" id="facebook" name='check' class="" >
+						                                    <label for="facebook">Facebook</label>
+						                                  </div>
+						                                  <div class="checkbox">
+						                                    <input type="checkbox" id="google" name='check' class="" >
+						                                    <label for="google">Google</label>
+						                                  </div>
+						                                  <div class="checkbox">
+						                                    <input type="checkbox" id="yandex" name='check' class="" >
+						                                    <label for="yandex">Yandex</label>
+						                                  </div>
+						                                  <div class="checkbox">
+						                                    <input type="checkbox" id="motorola" name='check' class="" >
+						                                    <label for="motorola">Motorola</label>
+						                                  </div>
+						                                </div>
+						                              </div>
+  													</div>
+  												</div><!--/end row-->
+  											</div><!--/end container-->
+  										</div><!--/end mega menu content-->
+  									</li>
+  								</ul><!--/end dropdown-menu-->
+  							</li>
+  							<!-- End Gifts -->
+  							<!-- Main Demo -->
+  							<li class='dropdown-hider'><a href="#">Оплата</a></li>
+  							<li class='dropdown-hider'><a href="#">Доставка</a></li>
+  							<li class='dropdown-hider'><a href="#">Оптовикам</a></li>
+  							<li class='dropdown-hider'><a href="#">Вопросы</a></li>
+  							<li class='dropdown-hider'><a href="#">Новости</a></li>
+  							<!-- Main Demo -->
+  						</ul>
+  						<!-- End Nav Menu -->
+  					</div>
 				</div>
 			</div>
 			<!-- End Navbar -->
