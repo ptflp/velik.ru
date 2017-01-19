@@ -352,26 +352,14 @@
 						                                  </div>
 						                                </div>
 						                                <div class="dropdown-filter__brands" id="brands">
-						                                  <div class="checkbox">
-						                                    <input type="checkbox" id="yahoo" name='check' class="" >
-						                                    <label for="yahoo">Yahoo</label>
-						                                  </div>
-						                                  <div class="checkbox">
-						                                    <input type="checkbox" id="facebook" name='check' class="" >
-						                                    <label for="facebook">Facebook</label>
-						                                  </div>
-						                                  <div class="checkbox">
-						                                    <input type="checkbox" id="google" name='check' class="" >
-						                                    <label for="google">Google</label>
-						                                  </div>
-						                                  <div class="checkbox">
-						                                    <input type="checkbox" id="yandex" name='check' class="" >
-						                                    <label for="yandex">Yandex</label>
-						                                  </div>
-						                                  <div class="checkbox">
-						                                    <input type="checkbox" id="motorola" name='check' class="" >
-						                                    <label for="motorola">Motorola</label>
-						                                  </div>
+						                                 <ul class="dropdown-menu-ul">
+							                                <li >
+							                                  <a href="#" >
+							                                    <i class='dropdown-menu-icon icon-1'></i>
+							                                    Сноуборды
+							                                  </a>
+							  								</li>
+							  							 </ul>
 						                                </div>
 						                              </div>
   													</div>
